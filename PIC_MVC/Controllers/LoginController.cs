@@ -11,7 +11,7 @@ namespace PIC_MVC.Controllers
     public class LoginController : Controller
     {
         //
-        // GET: /Login/
+        // GET: /Login/LP Gonçalves
 
         public ActionResult Index()
         {
