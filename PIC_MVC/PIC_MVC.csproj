@@ -738,6 +738,7 @@
     <Content Include="Content\Templates\Loading Effect\fonts\feather\feather.woff" />
     <Content Include="Content\Templates\Loading Effect\img\.DS_Store" />
     <Content Include="Content\Templates\Loading Effect\img\credits.md" />
+    <Content Include="Areas\Home\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
