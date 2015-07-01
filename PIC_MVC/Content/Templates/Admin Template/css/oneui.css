@@ -12775,6 +12775,12 @@ a.block.block-link-hover3:active {
   left: 0;
   text-align: center;
 }
+.img-logo-pic {
+  top: 50%;
+  width:300;
+  right: 500;
+  left: 0;
+}
 .img-container > img {
   -webkit-transition: -webkit-transform 0.35s ease-out;
   transition: transform 0.35s ease-out;
