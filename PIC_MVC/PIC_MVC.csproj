@@ -137,6 +137,7 @@
     <Compile Include="Repository\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Areas\Home\Views\Home\home.cshtml" />
     <Content Include="Areas\Home\Views\Shared\index2.html" />
     <Content Include="Content\Templates\Admin Template\css\oneui.css" />
     <Content Include="Content\Templates\Admin Template\css\themes\amethyst.min.css" />
