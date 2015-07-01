@@ -31,7 +31,7 @@ namespace PIC_MVC.Controllers
 
             if (new UserRepository().UserVerification(usuario._user, usuario.Password))
             {
-                return View("View1");
+                return RedirectToAction("Index", "Home", new { area = "Home" });
             }
             else
             {
