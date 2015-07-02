@@ -16,5 +16,10 @@ namespace PIC_MVC.Areas.Home.Controllers
             return View();
         }
 
+        public ActionResult Index2()
+        {
+            return View();
+        }
+
     }
 }

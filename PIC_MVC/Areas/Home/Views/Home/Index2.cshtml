@@ -1,8 +1,8 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Index2";
 }
 
-<h2>Index</h2>
+<h2>Index2</h2>
 
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
@@ -53,7 +53,6 @@
 </head>
 <body>
     <!-- Page Container -->
-   
     <!--   Available Classes:
 
         'sidebar-l'                  Left Sidebar and right Side Overlay
@@ -69,7 +68,7 @@
 
         'header-navbar-fixed'        Enables fixed header
     -->
-   
+
     <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
         <!-- Side Overlay-->
         <aside id="side-overlay">
@@ -335,10 +334,7 @@
                             <li class="nav-main-heading"><span class="sidebar-mini-hide">ATIVIDADES DA PIC</span></li>
                             <li>
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Compra de Materiais</span></a>
-                                <ul>
-                                    
-                                  
-                                </ul>
+                                <ul></ul>
                             </li>
                             <li>
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span class="sidebar-mini-hide">Retirada de Materiais</span></a>
@@ -363,11 +359,9 @@
                             <li>
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a>
                                 <ul>
-                            <li>
-                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-fire"></i><span class="sidebar-mini-hide">Error Pages</span></a>
-                                <ul>
-
-                        </ul>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-fire"></i><span class="sidebar-mini-hide">Error Pages</span></a>
+                                        <ul></ul>
                     </div>
                     <!-- END Side Content -->
                 </div>
@@ -378,53 +372,11 @@
         <!-- END Sidebar -->
         <!-- Header -->
         <header id="header-navbar" class="content-mini content-mini-full">
+
             <!-- Header Navigation Right -->
             <ul class="nav-header pull-right">
                 <li>
-                    <div class="btn-group">
-                        <button class="btn btn-default btn-image dropdown-toggle" data-toggle="dropdown" type="button">
-                            <img src="~/Content/Templates/Admin Template/img/avatars/avatar10.jpg" alt="Avatar">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header">Profile</li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_inbox.html">
-                                    <i class="si si-envelope-open pull-right"></i>
-                                    <span class="badge badge-primary pull-right">3</span>Inbox
-                                </a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_profile.html">
-                                    <i class="si si-user pull-right"></i>
-                                    <span class="badge badge-success pull-right">1</span>Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="javascript:void(0)">
-                                    <i class="si si-settings pull-right"></i>Settings
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Actions</li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_lock.html">
-                                    <i class="si si-lock pull-right"></i>Lock Account
-                                </a>
-                            </li>
-                            <li>
-                                <a tabindex="-1" href="base_pages_login.html">
-                                    <i class="si si-logout pull-right"></i>Log out
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
-                    <button class="btn btn-default" data-toggle="layout" data-action="side_overlay_toggle" type="button">
-                        <i class="fa fa-tasks"></i>
-                    </button>
+                    <img src="../../../../Content/Login/Imagem/pic2.png" height="90" width="200" />
                 </li>
             </ul>
             <!-- END Header Navigation Right -->
@@ -442,39 +394,28 @@
                         <i class="fa fa-ellipsis-v"></i>
                     </button>
                 </li>
-                <li>
-                    <!-- Opens the Apps modal found at the bottom of the page, before including JS code -->
-                    <button class="btn btn-default pull-right" data-toggle="modal" data-target="#apps-modal" type="button">
-                        <i class="si si-grid"></i>
-                    </button>
-                </li>
-                <li class="visible-xs">
-                    <!-- Toggle class helper (for .js-header-search below), functionality initialized in App() -> uiToggleClass() -->
-                    <button class="btn btn-default" data-toggle="class-toggle" data-target=".js-header-search" data-class="header-search-xs-visible" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </li>
-                <li class="js-header-search header-search">
-                    <form class="form-horizontal" action="base_pages_search.html" method="post">
-                        <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b">
-                            <input class="form-control" type="text" id="base-material-text" name="base-material-text" placeholder="Search..">
+                <li class="nav-menu-lp"><a href="#">INICIO</a></li>
+                <li class="nav-menu-lp"><a href="#">SOLICITAR MATERIAL</a></li>
+                <li class="nav-menu-lp"><a href="#">ACOMPANHAR PIC</a></li>
 
-                            <span class="input-group-addon"><i class="si si-magnifier"></i></span>
-
-
-                        </div>
-                    </form>
-                </li>
             </ul>
             <!-- END Header Navigation Left -->
+
         </header>
         <!-- END Header -->
         <!-- Main Container -->
         <main id="main-container">
             <!-- Page Header -->
-            <div class="content bg-gray-lighter">
-                
-                <h1 class="page-heading push">BEM-VINDO - PIC VISIONTEC <small>Sistema de compra e retirada de materiaisv</small>
+            @*<div class="content bg-gray-lighter">*@
+
+            <div class="content bg-image overflow-hidden" style="background-image: url('/Content/Imagens/gradient27.jpg');">
+                <h1 class="page-heading push">
+                    <br />
+                    <br />
+                    <font color="#000000">
+                        PIC
+                    </font><br />
+                    <small> <font color="#000000">Sistema de compra e retirada de materiais</font></small>
                 </h1>
             </div>
             <!-- END Page Header -->
@@ -485,7 +426,6 @@
                     <div class="block-header">
                         <ul class="block-options">
                             <li>
-                                <img class="img-logo-pic" src="~/Content/Login/Imagem/pic2.png">
                                 <button type="button"><i class="si si-settings"></i></button>
                             </li>
                         </ul>
@@ -493,7 +433,6 @@
                     </div>
                     <div class="block-content block-content-full block-content-narrow">
                         <div class="push-30 push-30-t">
-                            @Html.ActionLink("Admin", "Index2", "Home", new { area = "Home" }, null)
                             <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
                             <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>
                             <p>Felis ullamcorper curae erat nulla luctus sociosqu phasellus posuere habitasse sollicitudin, libero sit potenti leo ultricies etiam blandit id platea augue, erat habitant fermentum lorem commodo taciti tristique etiam curabitur suscipit lacinia habitasse amet mauris eu eget ipsum nec magna in, adipiscing risus aenean turpis proin duis fringilla praesent ornare lorem eros malesuada vitae nullam diam velit potenti consectetur, vehicula accumsan risus lectus tortor etiam facilisis tempus sapien tortor, mi vestibulum taciti dapibus viverra ac justo vivamus erat phasellus turpis nisi class praesent duis ligula, vel ornare faucibus potenti nibh turpis, at id semper nunc dui blandit. Enim et nec habitasse ultricies id tortor curabitur, consectetur eu inceptos ante conubia tempor platea odio, sed sem integer lacinia cras non risus euismod turpis platea erat ultrices iaculis rutrum taciti, fusce lobortis adipiscing dapibus habitant sodales gravida pulvinar, elementum mi tempus ut commodo congue ipsum justo nec dui cursus scelerisque elementum volutpat tellus nulla laoreet taciti, nibh suspendisse primis arcu integer vulputate etiam ligula lobortis nunc, interdum commodo libero aliquam suscipit phasellus sollicitudin arcu varius venenatis erat ornare tempor nullam donec vitae etiam tellus.</p>

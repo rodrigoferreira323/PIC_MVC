@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.img-logo-pic {
+  top: 50%;
+  width:300;
+  right: 500;
+  left: 0;
+}
+
+.img-logo-pic-pullright{
+    position: fixed;
+    
+}
