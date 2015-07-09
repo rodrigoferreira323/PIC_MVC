@@ -4161,6 +4161,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+
 }
 @media (min-width: 768px) {
   .navbar {
@@ -6958,7 +6959,7 @@ button.text-primary-lighter:focus {
   opacity: .75;
 }
 .text-success {
-  color: #46c37b;
+  color: #226790;
 }
 a.text-success:hover,
 a.text-success:active,
@@ -6966,7 +6967,7 @@ a.text-success:focus,
 button.text-success:hover,
 button.text-success:active,
 button.text-success:focus {
-  color: #46c37b;
+  color: #226790;
   opacity: .75;
 }
 .text-warning {
@@ -7210,7 +7211,7 @@ a.bg-primary-lighter:hover {
   background-color: #a4c1e6;
 }
 .bg-success {
-  background-color: #46c37b;
+  background-color: #226790;
 }
 a.bg-success:hover {
   background-color: #34a263;
@@ -7448,7 +7449,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #46c37b;
+  background-color: #226790;
   border-color: #34a263;
 }
 .btn-success:hover,
@@ -7485,11 +7486,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #46c37b;
+  background-color: #226790;
   border-color: #34a263;
 }
 .btn-success .badge {
-  color: #46c37b;
+  color: #226790;
   background-color: #ffffff;
 }
 .btn-info {
@@ -7706,10 +7707,10 @@ textarea.form-control {
 .has-success.checkbox label,
 .has-success.radio-inline label,
 .has-success.checkbox-inline label {
-  color: #46c37b;
+  color: #226790;
 }
 .has-success .form-control {
-  border-color: #46c37b;
+  border-color: #226790;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -7719,12 +7720,12 @@ textarea.form-control {
   box-shadow: none;
 }
 .has-success .input-group-addon {
-  color: #46c37b;
-  border-color: #46c37b;
+  color: #226790;
+  border-color: #226790;
   background-color: #ffffff;
 }
 .has-success .form-control-feedback {
-  color: #46c37b;
+  color: #226790;
 }
 .has-info > label,
 .has-info .help-block,
@@ -7871,7 +7872,7 @@ textarea.form-control {
   background-color: #3675c5;
 }
 .label-success {
-  background-color: #46c37b;
+  background-color: #226790;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
@@ -7902,7 +7903,7 @@ textarea.form-control {
   background-color: #5c90d2;
 }
 .badge-success {
-  background-color: #46c37b;
+  background-color: #226790;
 }
 .badge-info {
   background-color: #70b9eb;
@@ -8625,7 +8626,7 @@ a.list-group-item:focus {
   border-color: #cdefdb;
 }
 .panel-success > .panel-heading {
-  color: #46c37b;
+  color: #la;
   background-color: #e0f5e9;
   border-color: #cdefdb;
 }
@@ -8634,7 +8635,7 @@ a.list-group-item:focus {
 }
 .panel-success > .panel-heading .badge {
   color: #e0f5e9;
-  background-color: #46c37b;
+  background-color: #la;
 }
 .panel-success > .panel-heading a {
   font-weight: 400;
@@ -11178,17 +11179,20 @@ a.list-group-item:focus {
     width: 230px;
     -webkit-transition: all 0.28s ease-out;
     transition: all 0.28s ease-out;
+
   }
   .sidebar-l.sidebar-o.sidebar-mini #sidebar .sidebar-content {
     -webkit-transform: translateX(170px) translateY(0) translateZ(0);
     -ms-transform: translateX(170px) translateY(0);
     transform: translateX(170px) translateY(0) translateZ(0);
+    
   }
   .sidebar-o.sidebar-mini #sidebar:hover,
   .sidebar-o.sidebar-mini #sidebar:hover .sidebar-content {
     -webkit-transform: translateX(0) translateY(0) translateZ(0);
     -ms-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0) translateZ(0);
+
   }
   .sidebar-o.sidebar-mini #sidebar .sidebar-mini-hide {
     opacity: 0;
@@ -11209,7 +11213,7 @@ a.list-group-item:focus {
   }
 }
 #side-overlay {
-  background-color: #fff;
+  background-color: transparent;
 }
 .sidebar-l #side-overlay {
   right: 0;
@@ -11597,8 +11601,8 @@ a.list-group-item:focus {
   box-shadow: 0 2px 0 #5c90d2;
 }
 .form-material.form-material-success > .form-control:focus {
-  -webkit-box-shadow: 0 2px 0 #46c37b;
-  box-shadow: 0 2px 0 #46c37b;
+  -webkit-box-shadow: 0 2px 0 #la;
+  box-shadow: 0 2px 0 #la;
 }
 .form-material.form-material-success > .form-control:focus + label {
   color: #46c37b;
