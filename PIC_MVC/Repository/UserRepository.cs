@@ -7,21 +7,28 @@ namespace PIC_MVC.Repository
 {
     public class UserRepository
     {
-        public bool UserVerification(string User, string password)
+        public Enum UserVerification(string User, string password)
         {
             switch (User)
             {
                 case "administrador":
                     if (password == "vt4001adm")
                     {
-                        return true;
+                        return administrador;
+                    }
+                    break;
+
+                case "operador":
+                    if (password == "opvt40tt")
+                    {
+                        return operador;
                     }
                     break;
 
                 case "desenvolvedor":
                     if (password == "vstudioPICmvc")
                     {
-                        return true;
+                        return desenvolvedor;
                     }
                     break;
 

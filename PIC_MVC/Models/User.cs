@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PIC_MVC.Models.Enum;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace PIC_MVC.Models
         [Required(ErrorMessage = "Insira a senha")]
         public string Password { get; set; }
 
+        public tipoUsuario TipoUsuario { get; set; }
+
     }
+
 }
