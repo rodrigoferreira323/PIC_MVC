@@ -10,7 +10,7 @@ namespace PIC_MVC.Models
     public class User
     {
         [Required(ErrorMessage = "Insira o usuário")]
-        public string User { get; set; }
+        public string _User { get; set; }
          
         [Required(ErrorMessage = "Insira a senha")]
         public string Password { get; set; }

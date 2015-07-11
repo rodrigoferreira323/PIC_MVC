@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PIC_MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,9 +12,9 @@ namespace PIC_MVC.Areas.Home.Controllers
         //
         // GET: /Home/Home/
 
-        public ActionResult Index()
+        public ActionResult Index(User usuario)
         {
-            return View();
+            return View(usuario);
         }
 
         public ActionResult Index2()

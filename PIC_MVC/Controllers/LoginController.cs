@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using PIC_MVC.Models;
 using PIC_MVC.Repository;
 
+
 namespace PIC_MVC.Controllers
 {
     public class LoginController : Controller
@@ -31,9 +32,9 @@ namespace PIC_MVC.Controllers
 
             usuario.tipoUsuario = new UserRepository().UserVerification(usuario);
 
-            if (new UserRepository().UserVerification(usuario))
+            if (usuario.tipoUsuario != null)
             {
-                return RedirectToAction("Index", "Home", new { area = "Home" });
+                return RedirectToAction("Index", "Home", new { area = "Home", usuario = usuario});
             }
             else
             {

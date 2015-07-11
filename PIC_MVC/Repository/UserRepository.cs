@@ -9,42 +9,46 @@ namespace PIC_MVC.Repository
 {
     public class UserRepository
     {
-        public Enum UserVerification(User usuario)
+        public bool UserVerification(User usuario)
         {
-            switch (usuario.User)
+            switch (usuario._User)
             {
                 case "administrador":
                     if (usuario.Password == "vt4001adm")
                     {
-                        return tipoUsuario.administrador;
+                        usuario.tipoUsuario = tipoUsuario.administrador;
+                        return true;
                     }
                     break;
 
                 case "operador":
                     if (usuario.Password == "opvt40tt")
                     {
-                        return tipoUsuario.operador;
+                        usuario.tipoUsuario = tipoUsuario.operador;
+                        return true;
                     }
                     break;
 
                 case "desenvolvedor":
                     if (usuario.Password == "vstudioPICmvc")
                     {
-                        return tipoUsuario.desenvolvedor;
+                        usuario.tipoUsuario = tipoUsuario.desenvolvedor;
+                        return true;
                     }
                     break;
 
                 case "visiontec":
                     if (usuario.Password == "visiontec123")
                     {
-                        return tipoUsuario.visiontec;
+                        usuario.tipoUsuario = tipoUsuario.visiontec;
+                        return true;
                     }
                     break;
 
                 default:
-                    return null;
+                    return false;
             }
-            return null;
+            return false;
         }
     }
 }
