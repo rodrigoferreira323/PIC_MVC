@@ -29,7 +29,9 @@ namespace PIC_MVC.Controllers
                 return View("Index");
             }
 
-            if (new UserRepository().UserVerification(usuario._user, usuario.Password))
+            usuario.tipoUsuario = new UserRepository().UserVerification(usuario);
+
+            if (new UserRepository().UserVerification(usuario))
             {
                 return RedirectToAction("Index", "Home", new { area = "Home" });
             }

@@ -5,14 +5,11 @@ using System.Web;
 
 namespace PIC_MVC.Models.Enum
 {
-    public class tipoUsuario
+    public enum tipoUsuario
     {
-        public enum tipoUsuario
-        {
-            administrador, 
-            operador,
-            desenvolvedor,
-            visiontec,
-        }
+        administrador,
+        operador,
+        desenvolvedor,
+        visiontec,
     }
 }

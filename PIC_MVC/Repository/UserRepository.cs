@@ -2,47 +2,49 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using PIC_MVC.Models.Enum;
+using PIC_MVC.Models;
 
 namespace PIC_MVC.Repository
 {
     public class UserRepository
     {
-        public Enum UserVerification(string User, string password)
+        public Enum UserVerification(User usuario)
         {
-            switch (User)
+            switch (usuario.User)
             {
                 case "administrador":
-                    if (password == "vt4001adm")
+                    if (usuario.Password == "vt4001adm")
                     {
-                        return administrador;
+                        return tipoUsuario.administrador;
                     }
                     break;
 
                 case "operador":
-                    if (password == "opvt40tt")
+                    if (usuario.Password == "opvt40tt")
                     {
-                        return operador;
+                        return tipoUsuario.operador;
                     }
                     break;
 
                 case "desenvolvedor":
-                    if (password == "vstudioPICmvc")
+                    if (usuario.Password == "vstudioPICmvc")
                     {
-                        return desenvolvedor;
+                        return tipoUsuario.desenvolvedor;
                     }
                     break;
 
                 case "visiontec":
-                    if (password == "visiontec123")
+                    if (usuario.Password == "visiontec123")
                     {
-                        return true;
+                        return tipoUsuario.visiontec;
                     }
                     break;
 
                 default:
-                    return false;
+                    return null;
             }
-            return false;
+            return null;
         }
     }
 }
