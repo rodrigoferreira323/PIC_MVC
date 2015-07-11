@@ -30,11 +30,10 @@ namespace PIC_MVC.Controllers
                 return View("Index");
             }
 
-            usuario.tipoUsuario = new UserRepository().UserVerification(usuario);
-
-            if (usuario.tipoUsuario != null)
+            if (new UserRepository().UserVerification(usuario))
             {
-                return RedirectToAction("Index", "Home", new { area = "Home", usuario = usuario});
+                usuario.tipoUsuario = new UserRepository().SetTipoUsuario(usuario);
+                return RedirectToAction("Index", "Home", new { area = "Home", usuario = usuario });
             }
             else
             {

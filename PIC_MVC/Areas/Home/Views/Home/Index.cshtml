@@ -1,5 +1,7 @@
 ﻿@model PIC_MVC.Models.User
 
+@using PIC_MVC.Models.Enum
+
 
 @{
     ViewBag.Title = "Index2";
@@ -443,24 +445,28 @@
                 </div>
             </div>
 
-
-            <div class="container-fluid">
-                <div class="col-lg-4 col-sm-offset-2">
-                    <div class="block block-themed block-bordered">
-                        <div class="block-content block-content-full text-center bg-warning>
-                            <h3 class="block-title"><font color="#FFFAFA"> APROVAR PIC </font></h3>
-                        </div>
-                        <div class=" block-content border-t">
-                            <div class="row items-push text-center">
-                                <div class="col-xs-12">
-                                    <div class="push-5"><i class="si si-note fa-2x"></i></div>
-                                    <div class="h5 font-w300 text-muted">APROVAR</div>
+            @if (Model.tipoUsuario == tipoUsuario.administrador)
+            {
+                <div class="container-fluid">
+                    <div class="col-lg-4 col-sm-offset-2">
+                        <div class="block block-themed block-bordered">
+                            <div class="block-content block-content-full text-center bg-success">
+                                <h3 class="block-title"><font color="#FFFAFA"> SOhiewyfgweyigfywiegfwiyLICITAR MATERIAIS </font></h3>
+                            </div>
+                            <div class=" block-content border-t">
+                                <div class="row items-push text-center">
+                                    <div class="col-xs-12">
+                                        <div class="push-5"><i class="si si-note fa-2x"></i></div>
+                                        <div class="h5 font-w300 text-muted">Comece já</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }
+
+
             <!-- END Demo Content -->
             <!-- END Page Content -->
             <!-- END Main Container -->

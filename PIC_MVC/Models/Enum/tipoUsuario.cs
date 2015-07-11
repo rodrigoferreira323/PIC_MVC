@@ -11,5 +11,7 @@ namespace PIC_MVC.Models.Enum
         operador,
         desenvolvedor,
         visiontec,
+        nulo,
     }
+
 }

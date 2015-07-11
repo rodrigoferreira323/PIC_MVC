@@ -16,7 +16,6 @@ namespace PIC_MVC.Repository
                 case "administrador":
                     if (usuario.Password == "vt4001adm")
                     {
-                        usuario.tipoUsuario = tipoUsuario.administrador;
                         return true;
                     }
                     break;
@@ -24,7 +23,6 @@ namespace PIC_MVC.Repository
                 case "operador":
                     if (usuario.Password == "opvt40tt")
                     {
-                        usuario.tipoUsuario = tipoUsuario.operador;
                         return true;
                     }
                     break;
@@ -32,7 +30,6 @@ namespace PIC_MVC.Repository
                 case "desenvolvedor":
                     if (usuario.Password == "vstudioPICmvc")
                     {
-                        usuario.tipoUsuario = tipoUsuario.desenvolvedor;
                         return true;
                     }
                     break;
@@ -40,7 +37,6 @@ namespace PIC_MVC.Repository
                 case "visiontec":
                     if (usuario.Password == "visiontec123")
                     {
-                        usuario.tipoUsuario = tipoUsuario.visiontec;
                         return true;
                     }
                     break;
@@ -50,5 +46,45 @@ namespace PIC_MVC.Repository
             }
             return false;
         }
+
+        public tipoUsuario SetTipoUsuario(User usuario)
+        {
+            switch (usuario._User)
+            {
+                case "administrador":
+                    if (usuario.Password == "vt4001adm")
+                    {
+                        return tipoUsuario.administrador;
+                    }
+                    break;
+
+                case "operador":
+                    if (usuario.Password == "opvt40tt")
+                    {
+                        return tipoUsuario.operador;
+                    }
+                    break;
+
+                case "desenvolvedor":
+                    if (usuario.Password == "vstudioPICmvc")
+                    {
+                        return tipoUsuario.desenvolvedor;
+                    }
+                    break;
+
+                case "visiontec":
+                    if (usuario.Password == "visiontec123")
+                    {
+                        return tipoUsuario.visiontec;
+                    }
+                    break;
+
+                default:
+                    return tipoUsuario.nulo;
+            }
+            return tipoUsuario.nulo;
+
+        }
+
     }
 }

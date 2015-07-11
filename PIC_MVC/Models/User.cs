@@ -15,7 +15,7 @@ namespace PIC_MVC.Models
         [Required(ErrorMessage = "Insira a senha")]
         public string Password { get; set; }
 
-        public tipoUsuario tipoUsuario { get; set; }
+        public tipoUsuario? tipoUsuario { get; set; }
 
     }
 
