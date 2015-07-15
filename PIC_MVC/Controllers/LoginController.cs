@@ -16,24 +16,23 @@ namespace PIC_MVC.Controllers
 
         public ActionResult Index()
         {
-            User usuario = new User();
-
-            return View(usuario);
+            return View(new LoginUser());
         }
 
         [HttpPost]
-        public ActionResult Index(User usuario)
+        public ActionResult Index(LoginUser loginUser)
         {
-            if (usuario == null)
+            if (loginUser == null || !ModelState.IsValid)
             {
                 ModelState.AddModelError("", "Usuário ou Senha Incorretos");
                 return View("Index");
             }
 
-            if (new UserRepository().UserVerification(usuario))
+            User user = new UserRepository().GetUser(loginUser.User, loginUser.Password);
+
+            if (user != null)
             {
-                usuario.tipoUsuario = new UserRepository().SetTipoUsuario(usuario);
-                return RedirectToAction("Index", "Home", new { area = "Home", usuario = usuario });
+                return RedirectToAction("Index", "Home", new { area = "Home", username = user.username, password = user.password });
             }
             else
             {
@@ -41,7 +40,5 @@ namespace PIC_MVC.Controllers
             }
             return View("Index");
         }
-
-
     }
 }

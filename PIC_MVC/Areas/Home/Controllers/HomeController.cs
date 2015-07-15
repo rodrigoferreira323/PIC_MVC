@@ -1,4 +1,5 @@
 ﻿using PIC_MVC.Models;
+using PIC_MVC.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,11 @@ namespace PIC_MVC.Areas.Home.Controllers
         //
         // GET: /Home/Home/
 
-        public ActionResult Index(User usuario)
+        public ActionResult Index(string username, string password)
         {
-            return View(usuario);
+            User user = new UserRepository().GetUser(username, password);
+
+            return View(user);
         }
 
         public ActionResult Index2()

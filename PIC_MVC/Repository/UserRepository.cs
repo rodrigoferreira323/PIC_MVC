@@ -9,81 +9,60 @@ namespace PIC_MVC.Repository
 {
     public class UserRepository
     {
-        public bool UserVerification(User usuario)
+        private List<User> userList = new List<User>();
+        public UserRepository()
         {
-            switch (usuario._User)
+            if (HttpContext.Current.Session["BD"] == null)
             {
-                case "administrador":
-                    if (usuario.Password == "vt4001adm")
-                    {
-                        return true;
-                    }
-                    break;
+                CreateUsers();
 
-                case "operador":
-                    if (usuario.Password == "opvt40tt")
-                    {
-                        return true;
-                    }
-                    break;
-
-                case "desenvolvedor":
-                    if (usuario.Password == "vstudioPICmvc")
-                    {
-                        return true;
-                    }
-                    break;
-
-                case "visiontec":
-                    if (usuario.Password == "visiontec123")
-                    {
-                        return true;
-                    }
-                    break;
-
-                default:
-                    return false;
+                HttpContext.Current.Session["BD"] = userList;
             }
-            return false;
+            else
+            {
+                userList = (List<User>)HttpContext.Current.Session["BD"];
+            }
         }
 
-        public tipoUsuario SetTipoUsuario(User usuario)
+        public User GetUser(string user, string password)
         {
-            switch (usuario._User)
+            return userList.FirstOrDefault(x => x.username == user && x.password == password);
+        }
+
+        private void CreateUsers()
+        {
+            userList.Add(new User()
             {
-                case "administrador":
-                    if (usuario.Password == "vt4001adm")
-                    {
-                        return tipoUsuario.administrador;
-                    }
-                    break;
+                username = "visiontec",
+                password = "visiontec123",
+                tipoUsuario = tipoUsuario.visiontec
+            });
 
-                case "operador":
-                    if (usuario.Password == "opvt40tt")
-                    {
-                        return tipoUsuario.operador;
-                    }
-                    break;
+            userList.Add(new User()
+            {
+                username = "administrador",
+                password = "vt4001adm",
+                tipoUsuario = tipoUsuario.administrador
+            });
 
-                case "desenvolvedor":
-                    if (usuario.Password == "vstudioPICmvc")
-                    {
-                        return tipoUsuario.desenvolvedor;
-                    }
-                    break;
+            userList.Add(new User()
+            {
+                username = "desenvolvedor",
+                password = "vstudioPICmvc",
+                tipoUsuario = tipoUsuario.desenvolvedor
+            });
 
-                case "visiontec":
-                    if (usuario.Password == "visiontec123")
-                    {
-                        return tipoUsuario.visiontec;
-                    }
-                    break;
+            userList.Add(new User()
+            {
+                username = "operador",
+                password = "opvt40tt",
+                tipoUsuario = tipoUsuario.operador
+            });
+        }
 
-                default:
-                    return tipoUsuario.nulo;
-            }
-            return tipoUsuario.nulo;
-
+        public bool ExistsUser(string user, string password)
+        {
+            return userList.Any(u => u.username == user && u.password == password);
         }
 
     }

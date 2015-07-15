@@ -1,4 +1,4 @@
-﻿@model PIC_MVC.Models.User
+﻿@model PIC_MVC.Models.LoginUser
 
 
 @{
@@ -45,19 +45,16 @@
 
                 @Html.ValidationSummary(true)
 
-                @Html.TextBoxFor(model => model._User, new { @placeholder = "Usuário" })
-
-                @Html.ValidationMessageFor(model => model._User)
+                @Html.TextBoxFor(model => model.User, new { @placeholder = "Usuário" })
+                @Html.ValidationMessageFor(model => model.User)
 
                 @Html.TextBoxFor(model => model.Password, new { @placeholder = "Senha", @Type = "password" })
-
                 @Html.ValidationMessageFor(model => model.Password)
 
-                @Html.HiddenFor(model => model.tipoUsuario)
                 <button>ENTRAR</button>
 
             </form>
-        </div>
+        </div> 
 
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
