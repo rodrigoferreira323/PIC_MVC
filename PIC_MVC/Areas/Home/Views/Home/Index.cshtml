@@ -1,13 +1,12 @@
-﻿@model PIC_MVC.Models.User
+﻿@model PIC_MVC.Models.Enum.tipoUsuario
 
 @using PIC_MVC.Models.Enum
 
-
 @{
-    ViewBag.Title = "Index2";
+    ViewBag.Title = "Index";
 }
 
-<h2>Index2</h2>
+<h2>Index</h2>
 
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
@@ -22,7 +21,7 @@
     <meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
 
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
@@ -445,7 +444,7 @@
                 </div>
             </div>
 
-            @if(Model.tipoUsuario == tipoUsuario.administrador)
+            @if(Model == tipoUsuario.administrador)
             {
                 <div class="container-fluid">
                     <div class="col-lg-4 col-sm-offset-2">

@@ -1,4 +1,5 @@
 ﻿using PIC_MVC.Models;
+using PIC_MVC.Models.Enum;
 using PIC_MVC.Repository;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,9 @@ namespace PIC_MVC.Areas.Home.Controllers
         //
         // GET: /Home/Home/
 
-        public ActionResult Index(string username, string password)
+        public ActionResult Index(tipoUsuario tipoUsuario)
         {
-            User user = new UserRepository().GetUser(username, password);
-
-            return View(user);
+            return View(tipoUsuario);
         }
 
         public ActionResult Index2()

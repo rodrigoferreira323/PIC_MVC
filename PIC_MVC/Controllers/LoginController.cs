@@ -32,7 +32,7 @@ namespace PIC_MVC.Controllers
 
             if (user != null)
             {
-                return RedirectToAction("Index", "Home", new { area = "Home", username = user.username, password = user.password });
+                return RedirectToAction("Index", "Home", new { area = "Home", tipoUsuario = user.tipoUsuario });
             }
             else
             {
