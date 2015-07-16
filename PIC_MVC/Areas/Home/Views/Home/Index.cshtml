@@ -334,33 +334,51 @@
     { 
                             <!--<a class="h5 text-white" href="index.html">-->
                             <!--<i class="fa fa-circle-o-notch text-primary"> -->
-                        <font color="#F5F7F7">
-    <span class="h4 font-w600 sidebar-mini-hide">Administrador</span></font>
+    <center>
+        <font color="#F5F7F7">
+            <span class="h4 font-w600 sidebar-mini-hide">
+                <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                Administrador
+            </span>
+        </font>
+    </center>
 
     }
     @if (Model == tipoUsuario.visiontec)
                         {
         <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                        <font color="#F5F7F7">
-            <span class="h4 font-w600 sidebar-mini-hide">Client PIC</span>
+    <center>
+        <font color="#F5F7F7">
+            <span class="h4 font-w600 sidebar-mini-hide">
+                <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                Cliente PIC
+            </span>
         </font>
-
+    </center>
                         }
-    @if (Model == tipoUsuario.operador)
-                        {
+    @if (Model == tipoUsuario.operador)       {
         <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                        <font color="#F5F7F7">
-            <span class="h4 font-w600 sidebar-mini-hide">Operador</span>
+    <center>
+        <font color="#F5F7F7">
+            <span class="h4 font-w600 sidebar-mini-hide">
+                <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                Operador
+            </span>
         </font>
+    </center>
 
                         }
     @if (Model == tipoUsuario.desenvolvedor)
                         {
         <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                        <font color="#F5F7F7">
-            <span class="h4 font-w600 sidebar-mini-hide">Desenvolvedor</span>
+    <center>
+        <font color="#F5F7F7">
+            <span class="h4 font-w600 sidebar-mini-hide">
+                <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                Desenvolvedor
+            </span>
         </font>
-
+    </center>
                         }
 </div>
                     <!-- END Side Header -->
@@ -375,32 +393,16 @@
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-badge"></i><span class="sidebar-mini-hide">Compra de Materiais</span></a>
                                 <ul></ul>
                             </li>
+
+
                             <li>
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-grid"></i><span class="sidebar-mini-hide">Retirada de Materiais</span></a>
-                                <ul>
-                                    <li>
-                                        <a href="base_tables_styles.html">Styles</a>
-                                    </li>
-                                    <li>
-                                        <a href="base_tables_responsive.html">Responsive</a>
-                                    </li>
-                                    <li>
-                                        <a href="base_tables_tools.html">Tools</a>
-                                    </li>
-                                    <li>
-                                        <a href="base_tables_pricing.html">Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="base_tables_datatables.html">DataTables</a>
-                                    </li>
-                                </ul>
+
                             </li>
-                            <li>
-@if((Model == tipoUsuario.administrador) && (Model == tipoUsuario.desenvolvedor))
+@if ((Model == tipoUsuario.administrador) || (Model == tipoUsuario.desenvolvedor))
 {
-                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a>
-}                               
-                                        <ul></ul>
+                            <li><a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a></li>
+}                              
                     </div>
                     <!-- END Side Content -->
                 </div>
