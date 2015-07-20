@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 
 namespace PIC_MVC.Areas.Home
+
 {
     public class HomeAreaRegistration : AreaRegistration
     {

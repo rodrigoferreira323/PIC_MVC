@@ -10,6 +10,7 @@ namespace PIC_MVC.Repository
     public class UserRepository
     {
         private List<User> userList = new List<User>();
+
         public UserRepository()
         {
             if (HttpContext.Current.Session["BD"] == null)
@@ -35,28 +36,28 @@ namespace PIC_MVC.Repository
             {
                 username = "visiontec",
                 password = "visiontec123",
-                tipoUsuario = tipoUsuario.visiontec
+                tipoUsuario = tipoUsuario.Visiontec
             });
 
             userList.Add(new User()
             {
                 username = "administrador",
                 password = "vt4001adm",
-                tipoUsuario = tipoUsuario.administrador
+                tipoUsuario = tipoUsuario.Administrador
             });
 
             userList.Add(new User()
             {
                 username = "desenvolvedor",
                 password = "vstudioPICmvc",
-                tipoUsuario = tipoUsuario.desenvolvedor
+                tipoUsuario = tipoUsuario.Desenvolvedor
             });
 
             userList.Add(new User()
             {
                 username = "operador",
                 password = "opvt40tt",
-                tipoUsuario = tipoUsuario.operador
+                tipoUsuario = tipoUsuario.Operador
             });
         }
 

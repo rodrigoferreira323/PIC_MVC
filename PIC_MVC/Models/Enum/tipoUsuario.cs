@@ -7,11 +7,11 @@ namespace PIC_MVC.Models.Enum
 {
     public enum tipoUsuario
     {
-        administrador,
-        operador,
-        desenvolvedor,
-        visiontec,
-        nulo,
+        Administrador,
+        Operador,
+        Desenvolvedor,
+        Visiontec,
+        Nulo,
     }
 
 }
