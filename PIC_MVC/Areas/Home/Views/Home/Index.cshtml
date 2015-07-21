@@ -30,29 +30,6 @@
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
-
-    <!-- Icons -->
-    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="~/Content/Templates/Admin Template/img/favicons/favicon.png">
-
-    <link rel="icon" type="image/png" href="~/Content/Templates/Admin Template/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="~/Content/Templates/Admin Template/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="~/Content/Templates/Admin Template/img/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="~/Content/Templates/Admin Template/img/favicons/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="~/Content/Templates/Admin Template/img/favicons/favicon-192x192.png" sizes="192x192">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="~/Content/Templates/Admin Template/img/favicons/apple-touch-icon-180x180.png">
-    <!-- END Icons -->
-    <!-- Stylesheets -->
-    <!-- Web fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
 
     <!-- OneUI CSS framework -->
@@ -196,7 +173,7 @@
                             </li>
                             <li>
                                 <a href="base_pages_profile.html">
-                                    <img class="img-avatar" src="~/Content/Templates/Admin Template/img/avatars/avatar12.jpg" alt="">
+                                    <img class="img-avatar" src="~/Content/Templaates/Admin Template/img/avatars/avatar12.jpg" alt="">
                                     <!-- <!-- <i class="fa fa-circle text-warning"> --> --></i> Scott Ruiz
                                     <div class="font-w400 text-muted"><small>Graphic Designer</small></div>
                                 </a>
@@ -346,7 +323,7 @@
                         <center>
                             <font color="#F5F7F7">
                                 <span class="h4 font-w600 sidebar-mini-hide">
-                                    <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                    <img src="../../../../Content/Login/Imagem/perfil2.png" width="34" />
                                     @Model.ToString() <!--== tipoUsuario.Visiontec? Cliente PIC : Model.ToString()-->
                                 </span>
                             </font>
@@ -443,10 +420,21 @@
                     <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
                         <i class="fa fa-ellipsis-v"></i>
                     </button>
-                </li>
-                @*<li class="nav-menu-lp"><a href="#">ACOMPANHAR PIC</a></li>*@
+                </li></ul>
+                <ul class="nav-header pull-right">
 
-            </ul>
+                    <li class="hidden-xss hidden-smm">
+                        <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                        <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                            <i class="si si-logout"><a class="font-ww60"> Sair</a> </i>
+                        </button></ul>
+
+
+
+
+                        @*<li class="nav-menu-lp"><a href="#">ACOMPANHAR PIC</a></li>*@
+
+                </ul>
             <!-- END Header Navigation Left -->
 
         </header>
@@ -482,10 +470,10 @@
                         <thead>
                             <tr>
                                 <th class="text-center"></th>
-                                <th>Name</th>
+                                <th>Produto</th>
                                 <th class="hidden-xs">Email</th>
-                                <th class="hidden-xs" style="width: 15%;">Access</th>
-                                <th class="text-center" style="width: 10%;">Actions</th>
+                                <th class="hidden-xs" style="width: 15%;">Status</th>
+                                <th class="text-center" style="width: 10%;">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -783,300 +771,17 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="text-center">22</td>
-                                <td class="font-w600">Vincent Sims</td>
-                                <td class="hidden-xs">client22@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-danger">Reprovado</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">23</td>
-                                <td class="font-w600">Laura Bell</td>
-                                <td class="hidden-xs">client23@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">24</td>
-                                <td class="font-w600">Tiffany Kim</td>
-                                <td class="hidden-xs">client24@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-primary">Personal</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">25</td>
-                                <td class="font-w600">Denise Watson</td>
-                                <td class="hidden-xs">client25@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">26</td>
-                                <td class="font-w600">Craig Stone</td>
-                                <td class="hidden-xs">client26@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">27</td>
-                                <td class="font-w600">Adam Hall</td>
-                                <td class="hidden-xs">client27@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">28</td>
-                                <td class="font-w600">Ryan Hall</td>
-                                <td class="hidden-xs">client28@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-primary">Personal</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">29</td>
-                                <td class="font-w600">Lisa Gordon</td>
-                                <td class="hidden-xs">client29@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-success">VIP</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">30</td>
-                                <td class="font-w600">Tiffany Kim</td>
-                                <td class="hidden-xs">client30@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-danger">Reprovado</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">31</td>
-                                <td class="font-w600">Rebecca Gray</td>
-                                <td class="hidden-xs">client31@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">32</td>
-                                <td class="font-w600">Helen Silva</td>
-                                <td class="hidden-xs">client32@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-danger">Reprovado</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">33</td>
-                                <td class="font-w600">Amy Hunter</td>
-                                <td class="hidden-xs">client33@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">34</td>
-                                <td class="font-w600">Ronald George</td>
-                                <td class="hidden-xs">client34@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-danger">Reprovado</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">35</td>
-                                <td class="font-w600">Amy Hunter</td>
-                                <td class="hidden-xs">client35@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-warning">Trial</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">36</td>
-                                <td class="font-w600">Laura Bell</td>
-                                <td class="hidden-xs">client36@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-warning">Trial</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">37</td>
-                                <td class="font-w600">Tiffany Kim</td>
-                                <td class="hidden-xs">client37@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-danger">Reprovado</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">38</td>
-                                <td class="font-w600">Helen Silva</td>
-                                <td class="hidden-xs">client38@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-danger">Reprovado</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">39</td>
-                                <td class="font-w600">Eugene Burke</td>
-                                <td class="hidden-xs">client39@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-info">Business</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">40</td>
-                                <td class="font-w600">Eugene Burke</td>
-                                <td class="hidden-xs">client40@example.com</td>
-                                <td class="hidden-xs">
-                                    <span class="label label-success">VIP</span>
-                                </td>
-                                <td class="text-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Edit Client"><i class="fa fa-pencil"></i></button>
-                                        <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="Remove Client"><i class="fa fa-times"></i></button>
-                                    </div>
+
+                            
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <!-- END Dynamic Table Full -->
-            <!-- END Page Header -->
-            @*<div class="container-fluid">
-
-                                        <div class="col-lg-4 col-sm-offset-2">
-                                            <div class="block block-themed block-bordered">
-                                                <div class="block-content block-content-full text-center bg-success">
-                                                    <h3 class="block-title"><font color="#FFFAFA"> SOLICITAR MATERIAIS </font></h3>
-                </div>
-                                                <div class=" block-content border-t">
-                                                    <div class="row items-push text-center">
-                                                        <div class="col-xs-12">
-                                                            <div class="push-5"><i class="si si-note fa-2x"></i></div>
-                                                            <div class="h5 font-w300 text-muted">Comece já</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>*@
-
-    </div>
 
 
-    @if (Model == tipoUsuario.Administrador)
+    @*@if (Model == tipoUsuario.Administrador)
     {
         <div class="container-fluid">
             <div class="col-lg-4 col-sm-offset-2">
@@ -1095,12 +800,8 @@
                 </div>
             </div>
         </div>
-    }
+    }*@
 
-
-    <!-- END Demo Content -->
-    <!-- END Page Content -->
-    <!-- END Main Container -->
     <!-- Footer -->
     <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
         <div class="pull-right">
@@ -1108,8 +809,6 @@
         </div>
     </footer>
     <!-- END Footer -->
-    <!-- END Page Container -->
-    <!-- Apps Modal -->
     <!-- Opens from the button in the header -->
     <div class="modal fade" id="apps-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-sm modal-dialog modal-dialog-top">

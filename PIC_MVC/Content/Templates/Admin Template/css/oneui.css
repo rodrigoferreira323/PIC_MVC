@@ -6615,6 +6615,15 @@ button.close {
     display: none !important;
   }
 }
+
+.hidden-xss {
+
+  }
+.hidden-smm {
+
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important;
@@ -6855,6 +6864,10 @@ h6,
 }
 .font-w600 {
   font-weight: 600 !important;
+}
+.font-ww60 {
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+color:gray;
 }
 .font-w700 {
   font-weight: 700 !important;
