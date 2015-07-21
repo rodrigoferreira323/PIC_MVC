@@ -153,6 +153,8 @@
     <Content Include="Content\Imagens\triangle-background-17-1030x494.png" />
     <Content Include="Content\Imagens\user-xxl.png" />
     <Content Include="Content\Imagens\user.png" />
+    <Content Include="Content\Login\Imagem\logov.png" />
+    <Content Include="Content\Login\Imagem\logo_VISIO.png" />
     <Content Include="Content\Login\Imagem\perfil.png" />
     <Content Include="Content\Login\Imagem\perfil2.png" />
     <Content Include="Content\Login\Imagem\pic3.png" />

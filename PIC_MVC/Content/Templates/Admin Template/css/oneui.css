@@ -7468,8 +7468,50 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-purple {
   color: #ffffff;
-  background-color: #4b2965;
-  border-color: #34a263;
+  background-color: #1a96c6;
+  border-color: #1a96c6;
+
+}
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple.focus,
+.btn-purple:active,
+.btn-purple.active,
+.open > .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #1a7ab5;
+  border-color: #1a96c6;
+}
+.btn-purple:active,
+.btn-purple.active,
+.open > .dropdown-toggle.btn-purple {
+  background-color: #1a7ab5;
+  border-color: #1a7ab5;
+}
+.btn-purple.disabled,
+.btn-purple[disabled],
+fieldset[disabled] .btn-purple,
+.btn-purple.disabled:hover,
+.btn-purple[disabled]:hover,
+fieldset[disabled] .btn-purple:hover,
+.btn-purple.disabled:focus,
+.btn-purple[disabled]:focus,
+fieldset[disabled] .btn-purple:focus,
+.btn-purple.disabled.focus,
+.btn-purple[disabled].focus,
+fieldset[disabled] .btn-purple.focus,
+.btn-purple.disabled:active,
+.btn-purple[disabled]:active,
+fieldset[disabled] .btn-purple:active,
+.btn-purple.disabled.active,
+.btn-purple[disabled].active,
+fieldset[disabled] .btn-purple.active {
+  background-color: #1a7ab5;
+  border-color: #1a7ab5;
+}
+.btn-purple .badge {
+  color: #1a7b5;
+  background-color: #ffffff;
 
 }
 .btn-success:hover,
