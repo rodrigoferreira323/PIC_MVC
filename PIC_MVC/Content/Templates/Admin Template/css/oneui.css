@@ -7450,7 +7450,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #226790;
+  background-color: #37a967;
   border-color: #34a263;
 }
 .btn-success:hover,
@@ -7460,7 +7460,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #37a967;
+  background-color: #3CB242;
   border-color: #257346;
 }
 .btn-success:active,
