@@ -4,20 +4,20 @@
  *  Description: Custom JS code used in Tables Datatables Page
  */
 
-var BaseTableDatatables = function() {
+var BaseTableDatatables = function () {
     // Init full DataTable, for more examples you can check out https://www.datatables.net/
-    var initDataTableFull = function() {
+    var initDataTableFull = function () {
         jQuery('.js-dataTable-full').dataTable({
-            columnDefs: [ { orderable: false, targets: [ 5 ] } ],
+            columnDefs: [{ orderable: false, targets: [4] }],
             pageLength: 10,
-            lengthMenu: [[5, 10, 15, 20],[5, 10, 15, 20]]
+            lengthMenu: [[5, 10, 15, 20], [5, 10, 15, 20]]
         });
     };
 
     // Init simple DataTable, for more examples you can check out https://www.datatables.net/
-    var initDataTableSimple = function() {
+    var initDataTableSimple = function () {
         jQuery('.js-dataTable-simple').dataTable({
-            columnDefs: [ { orderable: false, targets: [ 4 ] } ],
+            columnDefs: [{ orderable: false, targets: [4] }],
             pageLength: 10,
             lengthMenu: [[5, 10, 15, 20], [5, 10, 15, 20]],
             searching: false,
@@ -31,11 +31,11 @@ var BaseTableDatatables = function() {
     };
 
     // DataTables Bootstrap integration
-    var bsDataTables = function() {
+    var bsDataTables = function () {
         var $DataTable = jQuery.fn.dataTable;
 
         // Set the defaults for DataTables init
-        jQuery.extend( true, $DataTable.defaults, {
+        jQuery.extend(true, $DataTable.defaults, {
             dom:
                 "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
                 "<'row'<'col-sm-12'tr>>" +
@@ -43,7 +43,7 @@ var BaseTableDatatables = function() {
             renderer: 'bootstrap',
             oLanguage: {
                 sLengthMenu: "_MENU_",
-                sInfo: "Showing <strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
+                sInfo: "Paginas <strong>_START_</strong>-<strong>_END_</strong> de <strong>_TOTAL_</strong>",
                 oPaginate: {
                     sPrevious: '<i class="fa fa-angle-left"></i>',
                     sNext: '<i class="fa fa-angle-right"></i>'
@@ -60,9 +60,9 @@ var BaseTableDatatables = function() {
 
         // Bootstrap paging button renderer
         $DataTable.ext.renderer.pageButton.bootstrap = function (settings, host, idx, buttons, page, pages) {
-            var api     = new $DataTable.Api(settings);
+            var api = new $DataTable.Api(settings);
             var classes = settings.oClasses;
-            var lang    = settings.oLanguage.oPaginate;
+            var lang = settings.oLanguage.oPaginate;
             var btnDisplay, btnClass;
 
             var attach = function (container, buttons) {
@@ -127,14 +127,14 @@ var BaseTableDatatables = function() {
                                         null
                             })
                             .append(jQuery('<a>', {
-                                    'href': '#'
-                                })
+                                'href': '#'
+                            })
                                 .html(btnDisplay)
                             )
                             .appendTo(container);
 
                             settings.oApi._fnBindAction(
-                                node, {action: button}, clickHandler
+                                node, { action: button }, clickHandler
                             );
                         }
                     }
@@ -183,7 +183,7 @@ var BaseTableDatatables = function() {
     };
 
     return {
-        init: function() {
+        init: function () {
             // Init Datatables
             bsDataTables();
             initDataTableSimple();
@@ -193,4 +193,4 @@ var BaseTableDatatables = function() {
 }();
 
 // Initialize when page loads
-jQuery(function(){ BaseTableDatatables.init(); });
+jQuery(function () { BaseTableDatatables.init(); });

@@ -143,8 +143,16 @@
     <Content Include="Areas\Home\Views\Home\index2.html" />
     <Content Include="Content\Imagens\condensation-rain.jpg" />
     <Content Include="Content\Imagens\E-Commerce.jpg" />
+    <Content Include="Content\Imagens\fundo1.png" />
+    <Content Include="Content\Imagens\fundo2.png" />
+    <Content Include="Content\Imagens\fundo3.png" />
+    <Content Include="Content\Imagens\fundo4.png" />
+    <Content Include="Content\Imagens\fundo5.png" />
+    <Content Include="Content\Imagens\fundo6.png" />
     <Content Include="Content\Imagens\gradient27.jpg" />
     <Content Include="Content\Imagens\triangle-background-17-1030x494.png" />
+    <Content Include="Content\Imagens\user-xxl.png" />
+    <Content Include="Content\Imagens\user.png" />
     <Content Include="Content\Login\Imagem\perfil.png" />
     <Content Include="Content\Login\Imagem\perfil2.png" />
     <Content Include="Content\Login\Imagem\pic3.png" />

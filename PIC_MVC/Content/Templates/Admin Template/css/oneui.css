@@ -1085,7 +1085,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DengXian", DengXian, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -5936,7 +5936,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DengXian", DengXian, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -6043,7 +6043,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "DengXian", DengXian, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6687,7 +6687,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   font-size: 14px;
   color: #646464;
   background-color: #f5f5f5;
@@ -6752,7 +6752,7 @@ h6,
 .h5,
 .h6 {
   margin: 0;
-  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.2;
   color: inherit;
@@ -6818,8 +6818,8 @@ h6,
   font-size: 14px;
 }
 .page-heading {
-  color: #545454;
-  font-size: 28px;
+  color: #grey;
+  font-size: 15px;
   font-weight: 400;
 }
 .page-heading small {
@@ -6866,7 +6866,7 @@ h6,
   font-weight: 600 !important;
 }
 .font-ww60 {
-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Open Sans", "DengXian", DengXian, Arial, sans-serif;
 color:gray;
 }
 .font-w700 {
@@ -6973,7 +6973,7 @@ button.text-primary-lighter:focus {
   opacity: .75;
 }
 .text-success {
-  color: #3CB242;
+  color: #2f9158;
 }
 a.text-success:hover,
 a.text-success:active,
@@ -6981,7 +6981,7 @@ a.text-success:focus,
 button.text-success:hover,
 button.text-success:active,
 button.text-success:focus {
-  color: #3CB242;
+  color: #2f9158;
   opacity: .75;
 }
 .text-warning {
@@ -7225,7 +7225,7 @@ a.bg-primary-lighter:hover {
   background-color: #a4c1e6;
 }
 .bg-success {
-  background-color: #3CB242;
+  background-color: #2f9158;
 }
 a.bg-success:hover {
   background-color: #34a263;
@@ -7462,9 +7462,15 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
 }
 .btn-success {
+    color: #ffffff;
+    background-color: #37a967;
+    border-color: #34a263;
+}
+.btn-purple {
   color: #ffffff;
-  background-color: #37a967;
+  background-color: #4b2965;
   border-color: #34a263;
+
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -7473,7 +7479,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #3CB242;
+  background-color: #2f9158;
   border-color: #257346;
 }
 .btn-success:active,
@@ -7500,11 +7506,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #3CB242;
+  background-color: #2f9158;
   border-color: #34a263;
 }
 .btn-success .badge {
-  color: #3CB242;
+  color: #2f9158;
   background-color: #ffffff;
 }
 .btn-info {
@@ -7721,10 +7727,10 @@ textarea.form-control {
 .has-success.checkbox label,
 .has-success.radio-inline label,
 .has-success.checkbox-inline label {
-  color: #3CB242;
+  color: #2f9158;
 }
 .has-success .form-control {
-  border-color: #3CB242;
+  border-color: #2f9158;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -7734,12 +7740,12 @@ textarea.form-control {
   box-shadow: none;
 }
 .has-success .input-group-addon {
-  color: #3CB242;
-  border-color: #3CB242;
+  color: #2f9158;
+  border-color: #2f9158;
   background-color: #ffffff;
 }
 .has-success .form-control-feedback {
-  color: #3CB242;
+  color: #2f9158;
 }
 .has-info > label,
 .has-info .help-block,
@@ -7886,7 +7892,7 @@ textarea.form-control {
   background-color: #3675c5;
 }
 .label-success {
-  background-color: #3CB242;
+  background-color: #2f9158;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
@@ -7917,7 +7923,7 @@ textarea.form-control {
   background-color: #5c90d2;
 }
 .badge-success {
-  background-color: #3CB242;
+  background-color: #2f9158;
 }
 .badge-info {
   background-color: #70b9eb;
@@ -8182,7 +8188,7 @@ a.list-group-item:focus {
 }
 .popover-title {
   padding: 10px 10px 1px;
-  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   background-color: #fff;
   border-bottom: none;
   border-radius: 1px 1px 0 0;
@@ -8247,7 +8253,7 @@ a.list-group-item:focus {
 .table > tbody > tr > th,
 .table > tfoot > tr > th {
   padding: 16px 10px 12px;
-  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -12424,7 +12430,7 @@ a.block.block-link-hover3:active {
   color: rgba(255, 255, 255, 0.25);
   content: "\f104";
 }
-.nav-main a.nav-submenu:before.nav-main a.nav-submenu:before-fwidth {
+.nav-main a.nav-submenu:before.nav-main a.nav-submenu:before.width {
   width: 100%;
 }
 .nav-main ul {
@@ -16629,7 +16635,7 @@ div.tagsinput span.tag {
   height: 22px;
   line-height: 18px;
   color: #fff;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   font-weight: 600;
   background-color: #5c90d2;
   border: none;
@@ -16717,7 +16723,7 @@ div.tagsinput span.tag a:hover {
 .select2-container--default .select2-search--inline .select2-search__field {
   padding-right: 0;
   padding-left: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -16726,7 +16732,7 @@ div.tagsinput span.tag a:hover {
 }
 .select2-search--dropdown .select2-search__field {
   padding: 6px 12px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "DengXian", DengXian, Arial, sans-serif;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
