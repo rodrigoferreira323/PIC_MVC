@@ -6973,7 +6973,7 @@ button.text-primary-lighter:focus {
   opacity: .75;
 }
 .text-success {
-  color: #226790;
+  color: #3CB242;
 }
 a.text-success:hover,
 a.text-success:active,
@@ -6981,7 +6981,7 @@ a.text-success:focus,
 button.text-success:hover,
 button.text-success:active,
 button.text-success:focus {
-  color: #226790;
+  color: #3CB242;
   opacity: .75;
 }
 .text-warning {
@@ -7225,7 +7225,7 @@ a.bg-primary-lighter:hover {
   background-color: #a4c1e6;
 }
 .bg-success {
-  background-color: #226790;
+  background-color: #3CB242;
 }
 a.bg-success:hover {
   background-color: #34a263;
@@ -7500,11 +7500,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #226790;
+  background-color: #3CB242;
   border-color: #34a263;
 }
 .btn-success .badge {
-  color: #226790;
+  color: #3CB242;
   background-color: #ffffff;
 }
 .btn-info {
@@ -7721,10 +7721,10 @@ textarea.form-control {
 .has-success.checkbox label,
 .has-success.radio-inline label,
 .has-success.checkbox-inline label {
-  color: #226790;
+  color: #3CB242;
 }
 .has-success .form-control {
-  border-color: #226790;
+  border-color: #3CB242;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -7734,12 +7734,12 @@ textarea.form-control {
   box-shadow: none;
 }
 .has-success .input-group-addon {
-  color: #226790;
-  border-color: #226790;
+  color: #3CB242;
+  border-color: #3CB242;
   background-color: #ffffff;
 }
 .has-success .form-control-feedback {
-  color: #226790;
+  color: #3CB242;
 }
 .has-info > label,
 .has-info .help-block,
@@ -7886,7 +7886,7 @@ textarea.form-control {
   background-color: #3675c5;
 }
 .label-success {
-  background-color: #226790;
+  background-color: #3CB242;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
@@ -7917,7 +7917,7 @@ textarea.form-control {
   background-color: #5c90d2;
 }
 .badge-success {
-  background-color: #226790;
+  background-color: #3CB242;
 }
 .badge-info {
   background-color: #70b9eb;
