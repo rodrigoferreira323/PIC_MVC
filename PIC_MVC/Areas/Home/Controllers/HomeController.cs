@@ -18,10 +18,21 @@ namespace PIC_MVC.Areas.Home.Controllers
         {
             return View(tipoUsuario);
         }
-
-        public ActionResult Index2()
+        public ActionResult Compra(tipoUsuario tipoUsuario)
         {
-            return View();
+            return View(tipoUsuario);
+        }
+        public ActionResult Retirada(tipoUsuario tipoUsuario)
+        {
+            return View(tipoUsuario);
+        }
+        public ActionResult Relatorios(tipoUsuario tipoUsuario)
+        {
+            return View(tipoUsuario);
+        }
+        public ActionResult Add_pedido(tipoUsuario tipoUsuario)
+        {
+            return View(tipoUsuario);
         }
 
     }

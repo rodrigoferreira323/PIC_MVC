@@ -139,8 +139,12 @@
     <Compile Include="Repository\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Areas\Home\Views\Home\home.cshtml" />
-    <Content Include="Areas\Home\Views\Home\index2.html" />
+    <Content Include="Areas\Home\Views\Home\Compra.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Retirada.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Relatorios.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Add_pedido.cshtml" />
+    <None Include="Areas\Home\Views\Home\Tests\home.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Tests\index2.html" />
     <Content Include="Content\Imagens\condensation-rain.jpg" />
     <Content Include="Content\Imagens\E-Commerce.jpg" />
     <Content Include="Content\Imagens\fundo1.png" />
@@ -760,7 +764,7 @@
     <Content Include="Content\Templates\Loading Effect\img\.DS_Store" />
     <Content Include="Content\Templates\Loading Effect\img\credits.md" />
     <Content Include="Areas\Home\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Home\Views\Home\Index2.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Tests\Index2.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
