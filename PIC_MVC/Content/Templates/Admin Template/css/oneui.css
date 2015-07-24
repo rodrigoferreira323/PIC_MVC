@@ -1659,6 +1659,17 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.centralizen {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
 .col-xs-1,
 .col-xs-2,
 .col-xs-3,
@@ -2635,7 +2646,7 @@ output {
 }
 .form-control {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -12070,6 +12081,7 @@ a.list-group-item:focus {
   background-color: #fff;
   -webkit-box-shadow: 0 2px rgba(0, 0, 0, 0.01);
   box-shadow: 0 2px rgba(0, 0, 0, 0.01);
+
 }
 .side-content .block {
   -webkit-box-shadow: none;
@@ -12079,6 +12091,7 @@ a.list-group-item:focus {
   padding: 15px 20px;
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
+
 }
 .block-header:before,
 .block-header:after {
@@ -12091,8 +12104,7 @@ a.list-group-item:focus {
 .block-title {
   font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1.2;
+  text-align: center
 }
 .block-title.text-normal {
   text-transform: none;
