@@ -1,6 +1,6 @@
-﻿@model PIC_MVC.Models.Enum.tipoUsuario
+﻿@model PIC_DATABASE.Models.Enum.UserType
 
-@using PIC_MVC.Models.Enum
+@using PIC_DATABASE.Models.Enum
 
 @{
     ViewBag.Title = "Relatorios";
@@ -327,60 +327,65 @@
 
 
                         @*}
-                                    @if (Model == tipoUsuario.Visiontec)
-                                                {
-                                 <i class="fa fa-circle-o-notch text-primary">
-                            <center>
-                                <font color="#F5F7F7">
-                                    <span class="h4 font-w600 sidebar-mini-hide">
-                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                                        Cliente PIC
-                                    </span>
-                                </font>
-                            </center>
-                                                }
-                            @if (Model == tipoUsuario.Operador)       {
-                                <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                            <center>
-                                <font color="#F5F7F7">
-                                    <span class="h4 font-w600 sidebar-mini-hide">
-                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                                        Operador
-                                    </span>
-                                </font>
-                            </center>
+                        @if (Model == tipoUsuario.Visiontec)
+                                    {
+                     <i class="fa fa-circle-o-notch text-primary">
+                <center>
+                    <font color="#F5F7F7">
+                        <span class="h4 font-w600 sidebar-mini-hide">
+                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                            Cliente PIC
+                        </span>
+                    </font>
+                </center>
+                                    }
+                @if (Model == tipoUsuario.Operador)       {
+                    <!-- <i class="fa fa-circle-o-notch text-primary"> -->
+                <center>
+                    <font color="#F5F7F7">
+                        <span class="h4 font-w600 sidebar-mini-hide">
+                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                            Operador
+                        </span>
+                    </font>
+                </center>
 
-                                                }
-                            @if (Model == tipoUsuario.Desenvolvedor)
-                                                {
-                                <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                            <center>
-                                <font color="#F5F7F7">
-                                    <span class="h4 font-w600 sidebar-mini-hide">
-                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                                        Desenvolvedor
-                                    </span>
-                                </font>
-                            </center>
-                                                }*@
+                                    }
+                @if (Model == tipoUsuario.Desenvolvedor)
+                                    {
+                    <!-- <i class="fa fa-circle-o-notch text-primary"> -->
+                <center>
+                    <font color="#F5F7F7">
+                        <span class="h4 font-w600 sidebar-mini-hide">
+                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                            Desenvolvedor
+                        </span>
+                    </font>
+                </center>
+                                    }*@
                     </div>
                     <!-- END Side Header -->
                     <!-- --------------------------------------------------------------------------------------------Side Content--------------------------------------------------------------------------------------------------- -->
                     <div class="side-content">
                         <ul class="nav-main">
                             <li>
-                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Index", "Home", new { tipoUsuario = Model })"><i class="si si-home"></i><span class="sidebar-mini-hide">Home</span></a>
+                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Index", "Home", new { UserType = Model })"><i class="si si-home"></i><span class="sidebar-mini-hide">Home</span></a>
                             </li>
-                            <li class="nav-main-heading"><span class="sidebar-mini-hide">ATIVIDADES DA PIC</span></li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-hide">VISUALIZAR</span></li>
                             <li>
-                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Compra", "Home", new { tipoUsuario = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Compra de Materiais</span></a>
+                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Compra", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Compra de Materiais</span></a>
                             </li>
                             <li>
-                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Retirada", "Home", new { tipoUsuario = Model })"><i class="fa fa-truck"></i><span class="sidebar-mini-hide">Retirada de Materiais</span></a>
+                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Retirada", "Home", new { UserType = Model })"><i class="fa fa-truck"></i><span class="sidebar-mini-hide">Retirada de Materiais</span></a>
                             </li>
-                            @if ((Model == tipoUsuario.Administrador) || (Model == tipoUsuario.Desenvolvedor))
+                            @if ((Model == UserType.Administrador) || (Model == UserType.Desenvolvedor))
                             {
-                                <li><a class="active" data-toggle="nav-menu" href="@Url.Action("Relatorios", "Home", new { tipoUsuario = Model })"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a></li>
+                                <li><a class="active" data-toggle="nav-menu" href="@Url.Action("Relatorios", "Home", new { UserType = Model })"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a></li>
+
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">EDITAR</span></li>
+                                <li>
+                                    <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Usuario", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Usuários</span></a>
+                                </li>
                             }
                         </ul>
                     </div>

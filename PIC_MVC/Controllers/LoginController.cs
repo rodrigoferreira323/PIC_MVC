@@ -4,7 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using PIC_MVC.Models;
-using PIC_MVC.Repository;
+using PIC_DATABASE.Models;
+using PIC_DATABASE.Repository;
 
 
 namespace PIC_MVC.Controllers
@@ -28,11 +29,11 @@ namespace PIC_MVC.Controllers
                 return View("Index");
             }
 
-            User user = new UserRepository().GetUser(loginUser.User, loginUser.Password);
+            Users user = new UserRepository().Get(loginUser.User, loginUser.Password);
 
             if (user != null)
             {
-                return RedirectToAction("Index", "Home", new { area = "Home", tipoUsuario = user.tipoUsuario });
+                return RedirectToAction("Index", "Home", new { area = "Home", UserType = user.UserType });
             }
             else
             {

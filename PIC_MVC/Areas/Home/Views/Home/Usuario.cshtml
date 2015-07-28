@@ -3,10 +3,10 @@
 @using PIC_DATABASE.Models.Enum
 
 @{
-    ViewBag.Title = "Retirada";
+    ViewBag.Title = "Compra";
 }
 
-<h2>CXOMPRA</h2>
+<h2>Compra</h2>
 
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="ie9 no-focus"> <![endif]-->
@@ -320,49 +320,49 @@
                                 <i class="fa fa-user"></i>
                                 <b>
                                     @*<img src="../../../../Content/Login/Imagem/perfil2.png" width="34" />*@
-                                    @Model.ToString() <!--== UserType.Visiontec? Cliente PIC : Model.ToString()-->
+                                    @Model.ToString() <!--== tipoUsuario.Visiontec? Cliente PIC : Model.ToString()-->
                                 </b>
                             </font>
                         </span>
 
 
                         @*}
-                        @if (Model == UserType.Visiontec)
-                                    {
-                     <i class="fa fa-circle-o-notch text-primary">
-                <center>
-                    <font color="#F5F7F7">
-                        <span class="h4 font-w600 sidebar-mini-hide">
-                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                            Cliente PIC
-                        </span>
-                    </font>
-                </center>
-                                    }
-                @if (Model == UserType.Operador)       {
-                    <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                <center>
-                    <font color="#F5F7F7">
-                        <span class="h4 font-w600 sidebar-mini-hide">
-                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                            Operador
-                        </span>
-                    </font>
-                </center>
+                                    @if (Model == tipoUsuario.Visiontec)
+                                                {
+                                 <i class="fa fa-circle-o-notch text-primary">
+                            <center>
+                                <font color="#F5F7F7">
+                                    <span class="h4 font-w600 sidebar-mini-hide">
+                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                        Cliente PIC
+                                    </span>
+                                </font>
+                            </center>
+                                                }
+                            @if (Model == tipoUsuario.Operador)       {
+                                <!-- <i class="fa fa-circle-o-notch text-primary"> -->
+                            <center>
+                                <font color="#F5F7F7">
+                                    <span class="h4 font-w600 sidebar-mini-hide">
+                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                        Operador
+                                    </span>
+                                </font>
+                            </center>
 
-                                    }
-                @if (Model == UserType.Desenvolvedor)
-                                    {
-                    <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                <center>
-                    <font color="#F5F7F7">
-                        <span class="h4 font-w600 sidebar-mini-hide">
-                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                            Desenvolvedor
-                        </span>
-                    </font>
-                </center>
-                                    }*@
+                                                }
+                            @if (Model == tipoUsuario.Desenvolvedor)
+                                                {
+                                <!-- <i class="fa fa-circle-o-notch text-primary"> -->
+                            <center>
+                                <font color="#F5F7F7">
+                                    <span class="h4 font-w600 sidebar-mini-hide">
+                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                        Desenvolvedor
+                                    </span>
+                                </font>
+                            </center>
+                                                }*@
                     </div>
                     <!-- END Side Header -->
                     <!-- --------------------------------------------------------------------------------------------Side Content--------------------------------------------------------------------------------------------------- -->
@@ -371,20 +371,20 @@
                             <li>
                                 <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Index", "Home", new { UserType = Model })"><i class="si si-home"></i><span class="sidebar-mini-hide">Home</span></a>
                             </li>
-                            <li class="nav-main-heading"><span class="sidebar-mini-hide">VISUALIZAR</span></li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-hide">VISUALIZAÇÃO</span></li>
                             <li>
-                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Compra", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Compra de Materiais</span></a>
+                                <a class="nav-main" data-toggle="nav-menu" href="@Url.Action("Compra", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Compra de Materiais</span></a>
                             </li>
                             <li>
-                                <a class="active" data-toggle="nav-menu" href="@Url.Action("Retirada", "Home", new { UserType = Model })"><i class="fa fa-truck"></i><span class="sidebar-mini-hide">Retirada de Materiais</span></a>
+                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Retirada", "Home", new { UserType = Model })"><i class="fa fa-truck"></i><span class="sidebar-mini-hide">Retirada de Materiais</span></a>
                             </li>
                             @if ((Model == UserType.Administrador) || (Model == UserType.Desenvolvedor))
                             {
                                 <li><a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Relatorios", "Home", new { UserType = Model })"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a></li>
 
-                                <li class="nav-main-heading"><span class="sidebar-mini-hide">EDITAR</span></li>
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">DESENVOLVIMENTO</span></li>
                                 <li>
-                                    <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Usuario", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Usuários</span></a>
+                                    <a class="active" data-toggle="nav-menu" href="@Url.Action("Usuario", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Usuários</span></a>
                                 </li>
                             }
                         </ul>
@@ -462,10 +462,10 @@
                 <div class="block-header">
                     <h0 class="page-heading">
                         <center>
-                            <a class="btn-default">Retirada de Materiais<br /></a>
+                            <a class="btn-default">Usuários<br /></a>
                         </center>
                     </h0>
-                    <a href="@Url.Action("Add_pedido", "Home", new { UserType = Model })" button class="btn btn-purple push-5-r push-10" type="button"><i class="fa fa-plus"></i> Adicionar Pedido</button></a>
+                    <a href="@Url.Action("Add_usuario", "Home", new { UserType = Model })" button class="btn btn-purple push-5-r push-10" type="button"><i class="fa fa-plus"></i> Adicionar Usuário</button></a>
                 </div>
                 <div class="block-content">
                     <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/base_tables_datatables.js -->
@@ -780,7 +780,7 @@
                 </div>
             </div>
             <!-- -------------------------------------------------------------------------------------------END Dynamic Table full-------------------------------------------------------------------------------------------- -->
-            @*@if (Model == UserType.Administrador)
+            @*@if (Model == tipoUsuario.Administrador)
                 {
                     <div class="container-fluid">
                         <div class="col-lg-4 col-sm-offset-2">

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIC_MVC", "PIC_MVC\PIC_MVC.csproj", "{D81A5631-87AA-4B19-98CA-B7BF9B561E16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIC_DATABASE", "PIC_DATABASE\PIC_DATABASE.csproj", "{DD7CE2E7-07D8-4089-A62E-5A19A998FA09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D81A5631-87AA-4B19-98CA-B7BF9B561E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D81A5631-87AA-4B19-98CA-B7BF9B561E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D81A5631-87AA-4B19-98CA-B7BF9B561E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7CE2E7-07D8-4089-A62E-5A19A998FA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7CE2E7-07D8-4089-A62E-5A19A998FA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7CE2E7-07D8-4089-A62E-5A19A998FA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7CE2E7-07D8-4089-A62E-5A19A998FA09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

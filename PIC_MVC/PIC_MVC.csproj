@@ -59,9 +59,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -92,9 +89,6 @@
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Providers">
-      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -128,21 +122,21 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Home\Controllers\HomeController.cs" />
     <Compile Include="Areas\Home\HomeAreaRegistration.cs" />
+    <Compile Include="Areas\Home\Models\UserViewModel.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Enum\tipoUsuario.cs" />
     <Compile Include="Models\LoginUser.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\Home\Views\Home\Compra.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Add_usuario.cshtml" />
     <Content Include="Areas\Home\Views\Home\Retirada.cshtml" />
-    <Content Include="Areas\Home\Views\Home\Relatorios.cshtml" />
     <Content Include="Areas\Home\Views\Home\Add_pedido.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Compra.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Relatorios.cshtml" />
+    <Content Include="Areas\Home\Views\Home\Usuario.cshtml" />
     <None Include="Areas\Home\Views\Home\Tests\home.cshtml" />
     <Content Include="Areas\Home\Views\Home\Tests\index2.html" />
     <Content Include="Content\Imagens\condensation-rain.jpg" />
@@ -798,11 +792,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Home\Models\" />
     <Folder Include="Areas\Home\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PIC_DATABASE\PIC_DATABASE.csproj">
+      <Project>{dd7ce2e7-07d8-4089-a62e-5a19a998fa09}</Project>
+      <Name>PIC_DATABASE</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
