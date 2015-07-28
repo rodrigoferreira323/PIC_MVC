@@ -1,0 +1,11 @@
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\PIC_DATABASE.dll.config
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\PIC_DATABASE.dll
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\PIC_DATABASE.pdb
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\EntityFramework.dll
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\EntityFramework.xml
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\obj\Debug\PIC_DATABASE.dll
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\obj\Debug\PIC_DATABASE.pdb
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\obj\Debug\PIC_DATABASE.Migrations.CreateUser.resources
+D:\Desenvolvimento\C#\Projetos\PIC_MVC_backup\PIC_MVC\PIC_DATABASE\obj\Debug\PIC_DATABASE.csproj.GenerateResource.Cache
