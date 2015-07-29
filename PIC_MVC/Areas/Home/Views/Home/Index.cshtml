@@ -327,42 +327,42 @@
 
 
                         @*}
-                        @if (Model == UserType.Visiontec)
-                                    {
-                     <i class="fa fa-circle-o-notch text-primary">
-                <center>
-                    <font color="#F5F7F7">
-                        <span class="h4 font-w600 sidebar-mini-hide">
-                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                            Cliente PIC
-                        </span>
-                    </font>
-                </center>
-                                    }
-                @if (Model == UserType.Operador)       {
-                    <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                <center>
-                    <font color="#F5F7F7">
-                        <span class="h4 font-w600 sidebar-mini-hide">
-                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                            Operador
-                        </span>
-                    </font>
-                </center>
+                                    @if (Model == UserType.Visiontec)
+                                                {
+                                 <i class="fa fa-circle-o-notch text-primary">
+                            <center>
+                                <font color="#F5F7F7">
+                                    <span class="h4 font-w600 sidebar-mini-hide">
+                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                        Cliente PIC
+                                    </span>
+                                </font>
+                            </center>
+                                                }
+                            @if (Model == UserType.Operador)       {
+                                <!-- <i class="fa fa-circle-o-notch text-primary"> -->
+                            <center>
+                                <font color="#F5F7F7">
+                                    <span class="h4 font-w600 sidebar-mini-hide">
+                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                        Operador
+                                    </span>
+                                </font>
+                            </center>
 
-                                    }
-                @if (Model == UserType.Desenvolvedor)
-                                    {
-                    <!-- <i class="fa fa-circle-o-notch text-primary"> -->
-                <center>
-                    <font color="#F5F7F7">
-                        <span class="h4 font-w600 sidebar-mini-hide">
-                            <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
-                            Desenvolvedor
-                        </span>
-                    </font>
-                </center>
-                                    }*@
+                                                }
+                            @if (Model == UserType.Desenvolvedor)
+                                                {
+                                <!-- <i class="fa fa-circle-o-notch text-primary"> -->
+                            <center>
+                                <font color="#F5F7F7">
+                                    <span class="h4 font-w600 sidebar-mini-hide">
+                                        <img src="../../../../Content/Login/Imagem/perfil2.png" width="40" />
+                                        Desenvolvedor
+                                    </span>
+                                </font>
+                            </center>
+                                                }*@
                     </div>
                     <!-- END Side Header -->
                     <!-- --------------------------------------------------------------------------------------------Side Content--------------------------------------------------------------------------------------------------- -->
@@ -381,11 +381,11 @@
                             @if ((Model == UserType.Administrador) || (Model == UserType.Desenvolvedor))
                             {
                                 <li><a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Relatorios", "Home", new { UserType = Model })"><i class="si si-note"></i><span class="sidebar-mini-hide">Relatórios</span></a></li>
-                            
-                            <li class="nav-main-heading"><span class="sidebar-mini-hide">EDITAR</span></li>
-                            <li>
-                                <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Usuario", "Home", new { UserType = Model })"><i class="fa fa-usd"></i><span class="sidebar-mini-hide">   Usuários</span></a>
-                            </li>
+
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">EDITAR</span></li>
+                                <li>
+                                    <a class="nav-menu" data-toggle="nav-menu" href="@Url.Action("Usuario", "Home", new { UserType = Model })"><i class="fa fa-child"></i><span class="sidebar-mini-hide">   Usuários</span></a>
+                                </li>
                             }
                         </ul>
                     </div>
@@ -455,6 +455,7 @@
             </div>
 
             <!-- ----------------------------------------------------------------------------- Page Content----------------------------------------------------------------------------------------- -->
+           
             <div class="content content-boxed">
                 <!-- Invoice -->
                 <div class="block">
@@ -467,14 +468,13 @@
                             <li>
                                 <button type="button" data-toggle="block-option" data-action="fullscreen_toggle"></button>
                             </li>
-                            <li>
-                                <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
-                            </li>
                         </ul>
-                        <h3 class="block-title">#INV0625</h3>
                     </div>
                     <div class="block-content block-content-narrow">
                         <!-- Invoice Info -->
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211645.8417887189!2d-45.91745533779195!3d-23.304129278156854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcad6df51328d%3A0xa1cc45f33cb65d1!2sVisiontec!5e0!3m2!1spt-BR!2sbr!4v1438181467795" frameborder="0" style="width:100%; height:100%; border:0" allowfullscreen></iframe>
+
                         <div class="h1 text-center push-30-t push-30 hidden-print">VISIONTEC DA AMAZÔNIA</div>
                         <hr class="hidden-print">
                         <div class="row items-push-2x">
@@ -496,9 +496,12 @@
                                     Cep: 12.305-490<br>
                                     <i class="si si-call-end"></i> (012) 3958-6698
                                 </address>
+
                             </div>
                             <!-- END Client Info -->
                         </div>
+
+
                         <!-- END Invoice Info -->
                         <!-- Footer -->
                         <!-- END Footer -->
@@ -506,6 +509,7 @@
                 </div>
                 <!-- END Invoice -->
             </div>
+            <!-- Search Map -->
             <!-- END Page Content -->
         </main>
         <!-- END Main Container -->

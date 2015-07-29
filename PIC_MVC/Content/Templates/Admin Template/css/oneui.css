@@ -2358,7 +2358,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857143;
+  line-height: 1;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -4837,7 +4837,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  /*font-size: 75%;*/
   font-weight: bold;
   line-height: 1;
   color: #fff;
@@ -8296,7 +8296,7 @@ a.list-group-item:focus {
 .table > tfoot > tr > th {
   padding: 16px 10px 12px;
   font-family: "Source Sans Pro", "Open Sans", "DengXian", DengXian, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -12076,7 +12076,7 @@ a.list-group-item:focus {
   box-shadow: none;
 }
 .block-header {
-  padding: 15px 20px;
+  padding: 10px 1px;
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
@@ -12146,8 +12146,8 @@ a.list-group-item:focus {
 }
 @media screen and (min-width: 1200px) {
   .block-content.block-content-narrow {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 }
 .block.block-full .block-content {
@@ -16899,7 +16899,7 @@ div.tagsinput span.tag a:hover {
 }
 .legend > table td {
   padding: 3px 4px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .fc-event {
   padding-left: 3px;
